@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+	Layout = "_layoutBooks";
+}
+
+<!-- Delete Modal HTML -->
+<div id="deleteEmployeeModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form asp-action="Deletebook" asp-controller="Books" method="post">
+				<div class="modal-header">
+					<h4 class="modal-title">Remove Books</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>ID</label>
+						<input type="text" name="Id" class="form-control" >
+					</div>
+					<div class="form-group">
+						<label>Title</label>
+						<input type="text" name="Title" class="form-control" >
+					</div>
+					<div class="form-group">
+						<label>Author</label>
+						<input type="text" name="Author" class="form-control" >
+					</div>
+					<div class="form-group">
+						<label>ISBN</label>
+						<input type="number" name="ISBN" class="form-control" >
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-danger" value="Delete">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

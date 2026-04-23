@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+    <div>
+        <div class="RegisterDiv"></div>
+    <form asp-action="Registration_model" asp-controller="Admin" method="post" id="signupForm" class="form">
+            <h2>Sign Up</h2>
+        <input type="text" name="UserName" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="password" placeholder="Confirm Password" required> <br />
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+             <button type="submit" class="btn btn-primary">Create Account</button><br />
+        <p class="form-group">Already registered ? <a href="Login">Sign In</a></p>
+        </form>
+    </div>
+   
+
+   
+

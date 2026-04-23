@@ -1,0 +1,43 @@
+﻿
+
+<div id="addEmployeeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form asp-action="Addbook" asp-controller="Books" method="post">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Books</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        @* <div class="form-group">
+                        <label>ID</label>
+                        <input type="text" name="Id" class="form-control" required>
+                        </div> *@
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" name="Title" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Author</label>
+                            <input type="text" name="Author" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>ISBN</label>
+                            <input type="number" name="ISBN" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            @* <input type="checkbox" name="Availability" class="form-check-input" required> *@
+                            <label class="form-check-label">Availability</label>
+                            <input type="radio" name="Availability" value="true" /> Yes
+                            <input type="radio" name="Availability" value="false" /> No
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-success" value="Add">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<style>
+    body {
+        /*background-image: url("~/image's/wallpaperflare.com_wallpaper.jpg");*/
+        background-image: url("https://th.bing.com/th/id/OIP.tgQYDIWK0Z67zJ1pohyo4QHaEK?rs=1&pid=ImgDetMain"); 
+        background-repeat: no-repeat;
+        background-position: center; /* Center the image*/
+        background-size: cover; /*Resize the background image to cover the entire container */
+        padding-top: 0px;
+    }
+
+    .container {
+        width: 100%;
+        margin-bottom: 3.2rem;
+    }
+
+    .text-center {
+        margin-top: 2rem;
+        text-align: center !important;
+    }
+
+    #heading {
+        background-color: aliceblue;
+        color: #393030;
+        margin-top: 5rem;
+        margin-left: 35rem;
+        text-decoration: underline;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #04AA6D;
+    }
+
+
+        .button1:hover {
+            background-color: #04AA6D;
+            /* color: white;*/
+        }
+
+    .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008CBA;
+    }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+    #DivBtn {
+        margin: 0 auto;
+    }
+
+    #DivBtn {
+        margin-left: 41rem;
+        /* margin-top: 2rem;*/
+        margin-bottom: 6.8rem;
+    }
+
+    #btn {
+        margin: 20px;
+    }
+</style>
+
+<div class="text-center">
+    <marquee><h1 class="display-4" style="color:white"> Welcome to Gupta's Library Strore </h1></marquee>
+    <hr style="color:antiquewhite" />
+   
+    <h1 id="heading">To Access Library Function </h1>
+    
+
+    @* <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
+
+<div id="DivBtn">
+    @* <p><strong>Tip:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p>*@
+
+    <button id="btn" class="button button1"><a asp-controller="Admin" asp-action="Login" style="color:black">Login</a> </button>
+    <button id="btn" class="button button2"><a asp-controller="Admin" asp-action="Registration" style="color:black"> Register </a></button>
+
+</div>
